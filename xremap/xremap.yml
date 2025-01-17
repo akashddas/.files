@@ -1,0 +1,10 @@
+modmap:
+  - name: Main remaps
+    remap:
+      Esc: CapsLock
+      CapsLock:
+        held: leftmeta
+        alone: esc
+        alone_timeout_millis: 150
+      leftalt: leftctrl
+      leftctrl: leftalt

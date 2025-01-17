@@ -1,0 +1,6 @@
+configuration {
+  modes: "window,drun,run,ssh,filebrowser";
+  font: "IntoneMono Nerd Font 12";
+}
+
+@theme "venus.rasi"
