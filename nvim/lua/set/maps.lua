@@ -18,3 +18,6 @@ map("n", "<leader>cc", ":enew<CR>", { desc = "Create new buffer" })
 map("n", "<leader>nn", ":bnext<CR>", { desc = "Go to next buffer" })
 map("n", "<leader>pp", ":bprev<CR>", { desc = "Go to previous buffer" })
 map("n", "<leader>xx", ":bdelete!<CR>", { desc = "Delete current buffer" })
+
+map("n", "<leader>vv", ":vsplit<CR>", { desc = "Split buffer vertically" })
+map("n", "<leader>hh", ":split<CR>", { desc = "Split buffer horizontally" })
