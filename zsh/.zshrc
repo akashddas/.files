@@ -48,6 +48,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 # For autosuggestions
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Accept autosuggestions
 bindkey -M viins '^f' autosuggest-accept
 bindkey -M vicmd '^f' autosuggest-accept
 

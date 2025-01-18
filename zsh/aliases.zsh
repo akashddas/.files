@@ -21,18 +21,19 @@ alias gp="git push"
 
 # For configuration editors
 alias va="$EDITOR $XDG_CONFIG_HOME/alacritty/alacritty.toml"
-alias vn="$EDITOR $XDG_CONFIG_HOME/nvim/"
+alias vn="$EDITOR $XDG_CONFIG_HOME/nvim"
 alias vs="$EDITOR $DOTFILES/install.sh"
 alias vo="$EDITOR $XDG_CONFIG_HOME/ohmyposh/omp.toml"
 alias vr="$EDITOR $XDG_CONFIG_HOME/rofi/config.rasi"
 alias vt="$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf"
 # alias vx="$EDITOR $XDG_CONFIG_HOME/X11/.Xresources"
 alias vx="$EDITOR $XDG_CONFIG_HOME/xremap/xremap.yml"
-alias vz="$EDITOR $DOTFILES/zsh/"  # zsh config all in one place
+alias vz="$EDITOR $DOTFILES/zsh"  # zsh config all in one place
 
-# Access scratchpad
-alias sp="$EDITOR $HOME/scratchpad"
+# Access scrawls
+alias sp="$EDITOR $TENT/scrawls"
 
+alias si="source $DOTFILES/install.sh"
 alias sai="sudo apt install"
 alias aaa="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
 
