@@ -30,6 +30,11 @@ return {
 			builtin.find_files({
 				cwd = vim.fn.stdpath("config"),
 			})
-		end, { desc = "Telescope go to neovim config directory" })
+		end, { desc = "Telescope jump to neovim config directory" })
+		map("n", "<leader>vz", function()
+			builtin.find_files({
+				cwd = "$DOTFILES/zsh/",
+			})
+		end, { desc = "Telescope jump to zsh config directory" })
 	end,
 }
