@@ -36,11 +36,7 @@ echo "Could not find zsh-completions..." && \
 echo "Installing zsh-completions..." && \
 rm -rf "$HOME/.zsh/plugins/zsh-completions" && \
 git clone https://github.com/zsh-users/zsh-completions.git \
-"$HOME/.zsh/plugins/zsh-completions/" && \
-mkdir -p "$HOME/.zsh/plugins/zsh_completions" && \
-mv "$HOME/.zsh/plugins/zsh-completions/src" "$HOME/.zsh/plugins/zsh_completions" && \
-rm -rf "$HOME/.zsh/plugins/zsh-completions"
-
+"$HOME/.zsh/plugins/zsh_completions/"
 #########
 # fonts #
 #########
