@@ -14,6 +14,7 @@ return {
 				javascript = { "prettier" },
 				tailwind = { "rustywind" },
 				markdown = { "mdformat" },
+				zsh = { "shfmt" },
 				-- toml = { "taplo" },
 			},
 			format_on_save = {
