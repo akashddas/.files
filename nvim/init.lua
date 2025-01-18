@@ -44,20 +44,20 @@ vim.api.nvim_create_autocmd({ "TermOpen" }, {
 })
 
 -- Toggle non-relative line numbers in command mode
-vim.api.nvim_create_autocmd({ "CmdlineEnter", "InsertEnter", "FocusLost" }, {
+vim.api.nvim_create_autocmd({ "CmdlineEnter", "InsertEnter", "FocusLost", "WinLeave" }, {
 	group = togglenumbers,
 	callback = function()
-		if vim.opt.number then
+		if vim.opt.number:get() then
 			vim.opt.relativenumber = false
 			vim.cmd("redraw")
 		end
 	end,
 })
 
-vim.api.nvim_create_autocmd({ "CmdlineLeave", "InsertLeave", "FocusGained" }, {
+vim.api.nvim_create_autocmd({ "CmdlineLeave", "InsertLeave", "FocusGained", "WinEnter" }, {
 	group = togglenumbers,
 	callback = function()
-		if vim.opt.number then
+		if vim.opt.number:get() then
 			vim.opt.relativenumber = true
 			vim.cmd("redraw")
 		end
