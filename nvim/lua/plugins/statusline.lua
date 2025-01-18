@@ -12,7 +12,7 @@ return {
 				lualine_c = {
 					{
 						"buffers",
-						icons_enabled = false,
+						icons_enabled = true,
 						buffers_color = {
 							active = { fg = "#3c3836", bg = "#ea6962", gui = "bold" },
 							inactive = { fg = "#d4be98", bg = "#3c3836", gui = "bold" },
@@ -25,7 +25,7 @@ return {
 					},
 				},
 				lualine_x = { "encoding" },
-				lualine_y = { { "filetype", icon_only = false } },
+				lualine_y = { { "filetype", icons_enabled = false } },
 				lualine_z = { "fileformat" },
 			},
 		})
