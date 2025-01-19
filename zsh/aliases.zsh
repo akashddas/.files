@@ -28,7 +28,7 @@ alias vr="$EDITOR $XDG_CONFIG_HOME/rofi/config.rasi"
 alias vt="$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf"
 # alias vx="$EDITOR $XDG_CONFIG_HOME/X11/.Xresources"
 alias vx="$EDITOR $XDG_CONFIG_HOME/xremap/xremap.yml"
-alias vz="$EDITOR $DOTFILES/zsh"  # zsh config all in one place
+alias vz="$EDITOR $DOTFILES/zsh" # zsh config all in one place
 
 # Access scrawls
 alias sp="$EDITOR $TENT/scrawls"
@@ -36,6 +36,8 @@ alias sp="$EDITOR $TENT/scrawls"
 alias si="source $DOTFILES/install.sh"
 alias sai="sudo apt install"
 alias aaa="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+
+alias ssrx="sudo systemctl restart xremap.service"
 
 # For powerline icons in tmux
 alias tmux="tmux -u"
