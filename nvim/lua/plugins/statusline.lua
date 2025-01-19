@@ -21,7 +21,7 @@ return {
 							alternate_file = "",
 							modified = " +",
 						},
-						max_length = vim.o.columns * 1 / 3,
+						max_length = vim.o.columns * 2 / 3,
 					},
 				},
 				lualine_x = { "encoding" },
