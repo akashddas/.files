@@ -49,6 +49,7 @@ window {
     background-color: @background;
     border:           2;
     padding:          2;
+    border-radius:    6;
 }
 
 mainbox {
