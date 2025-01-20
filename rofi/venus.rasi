@@ -1,7 +1,7 @@
 * {
     /* Theme settings */
     highlight: bold italic;
-    scrollbar: true;
+    scrollbar: false;
 
     /* Gruvbox dark colors */
     gruvbox-dark-bg0-soft:     #32302f;
@@ -47,8 +47,8 @@
 
 window {
     background-color: @background;
-    border:           2;
-    padding:          2;
+    border:           4;
+    padding:          4;
     border-radius:    6;
 }
 
@@ -69,7 +69,8 @@ textbox {
 }
 
 listview {
-    border:       2px solid 0 0;
+    // border:       2px solid 0 0;
+    border:       none;
     padding:      2px 0 0;
     border-color: @separatorcolor;
     spacing:      2px;
@@ -77,8 +78,9 @@ listview {
 }
 
 element {
-    border:  0;
-    padding: 2px;
+    border:        0;
+    padding:       2px;
+    border-radius: 2px;
 }
 
 element.normal.normal {
