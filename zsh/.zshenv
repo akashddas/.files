@@ -31,4 +31,4 @@ export DOTFILES="$TENT/.files"
 
 # For paths
 typeset -U path
-path=("$HOME/.bin/nodejs/bin" "$HOME/.bin/luals/bin" "$HOME/.local/bin" $path)
+path=("$HOME/.cargo/bin" "$HOME/.bin/nodejs/bin" "$HOME/.bin/luals/bin" "$HOME/.local/bin" $path)
