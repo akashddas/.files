@@ -18,6 +18,8 @@ return {
 				"javascript",
 				"java",
 				"toml",
+				"ocaml",
+				"python",
 			},
 			sync_install = false,
 			auto_install = false,

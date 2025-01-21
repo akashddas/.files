@@ -79,5 +79,8 @@ eval "$(zoxide init --cmd cd zsh)"
 # For prompt
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/omp.toml)"
 
+# For opam
+eval $(opam env --switch=default)
+
 # For zsh syntax highlighting (keep this at the very bottom of .zshrc)
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

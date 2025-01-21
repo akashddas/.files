@@ -14,7 +14,13 @@ return {
 	config = function()
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 		local lspconfig = require("lspconfig")
-		local servers = { lua_ls = true, clangd = true, ts_ls = true }
+		local servers = {
+			lua_ls = true,
+			clangd = true,
+			ts_ls = true,
+			ocamllsp = true,
+			pylsp = true,
+		}
 
 		for server, config in pairs(servers) do
 			if config == true then

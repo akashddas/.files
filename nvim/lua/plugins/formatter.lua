@@ -4,7 +4,7 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				python = { "black", "isort" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
 				cmake = { "cmake_format" },
@@ -15,6 +15,7 @@ return {
 				tailwind = { "rustywind" },
 				markdown = { "mdformat" },
 				zsh = { "shfmt" },
+				ocaml = { "ocp-indent", "ocamlformat" },
 				-- toml = { "taplo" },
 			},
 			format_on_save = {
