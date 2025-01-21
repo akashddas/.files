@@ -16,7 +16,7 @@ return {
 				markdown = { "mdformat" },
 				zsh = { "shfmt" },
 				ocaml = { "ocp-indent", "ocamlformat" },
-				-- toml = { "taplo" },
+				toml = { "taplo" },
 			},
 			format_on_save = {
 				timeout_ms = 1500,
