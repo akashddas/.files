@@ -27,10 +27,12 @@
     normal-foreground:           @foreground;
     alternate-normal-background: @venus-dark-bg1;
     alternate-normal-foreground: @foreground;
-    selected-normal-background:  @venus-dark-bg3;
-    selected-normal-foreground:  @venus-dark-fg0;
-
-    active-background:           @venus-dark-red-dark;
+    /* Option selector colors */
+    selected-normal-background:  @venus-dark-red-dark;
+    selected-normal-foreground:  @venus-dark-bg1;
+    
+    /* Active-window option colors */
+    active-background:           @venus-dark-yellow-light;
     active-foreground:           @background;
     alternate-active-background: @active-background;
     alternate-active-foreground: @active-foreground;

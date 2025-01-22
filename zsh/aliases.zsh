@@ -20,11 +20,11 @@ alias gc="git commit"
 alias gp="git push"
 
 # For configuration editors
-alias va="$EDITOR $XDG_CONFIG_HOME/alacritty/alacritty.toml"
+alias va="$DOTFILES/alacritty/alacritty.toml"
 alias vn="$EDITOR $XDG_CONFIG_HOME/nvim"
 alias vs="$EDITOR $DOTFILES/install.sh"
 alias vo="$EDITOR $XDG_CONFIG_HOME/ohmyposh/omp.toml"
-alias vr="$EDITOR $XDG_CONFIG_HOME/rofi/config.rasi"
+alias vr="$EDITOR $DOTFILES/rofi"
 alias vt="$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf"
 # alias vx="$EDITOR $XDG_CONFIG_HOME/X11/.Xresources"
 alias vx="$EDITOR $XDG_CONFIG_HOME/xremap/xremap.yml"

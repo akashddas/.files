@@ -15,8 +15,8 @@ map("n", "<leader>tt", ":terminal<CR>", { desc = "Launch terminal" })
 map("t", "<Esc><Esc>", "<C-\\><C-N>", { desc = "Enter normal mode" })
 
 map("n", "<leader>cc", ":enew<CR>", { desc = "Create new buffer" })
-map("n", "<leader>nn", ":bnext<CR>", { desc = "Go to next buffer" })
-map("n", "<leader>pp", ":bprev<CR>", { desc = "Go to previous buffer" })
+map("n", "<leader>bn", ":bnext<CR>", { desc = "Go to next buffer" })
+map("n", "<leader>bp", ":bprev<CR>", { desc = "Go to previous buffer" })
 map("n", "<leader>xx", ":bdelete!<CR>", { desc = "Delete current buffer" })
 
 map("n", "<leader>vv", ":vsplit<CR>", { desc = "Split buffer vertically" })

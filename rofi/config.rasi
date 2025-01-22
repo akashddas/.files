@@ -1,6 +1,6 @@
 configuration {
   modes: "window,drun,run,ssh,filebrowser";
-  font: "IntoneMono Nerd Font 12";
+  font: "IntoneMono Nerd Font Medium 14";
   show-icons: true;
 }
 

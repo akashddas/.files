@@ -1,6 +1,9 @@
 # For config directory
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# For home .bin directory
+export HOMEBIN="$HOME/.bin"
+
 # Custom home directory
 export TENT="$HOME/tent"
 
@@ -31,4 +34,4 @@ export DOTFILES="$TENT/.files"
 
 # For paths
 typeset -U path
-path=("$HOME/.cargo/bin" "$HOME/.bin/nodejs/bin" "$HOME/.bin/luals/bin" "$HOME/.local/bin" $path)
+path=("$HOME/.cargo/bin" "$HOME/.bin/rofi" "$HOME/.bin/nodejs/bin" "$HOME/.bin/luals/bin" "$HOME/.local/bin" $path)

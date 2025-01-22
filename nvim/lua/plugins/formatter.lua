@@ -15,6 +15,7 @@ return {
 				tailwind = { "rustywind" },
 				markdown = { "mdformat" },
 				zsh = { "shfmt" },
+				sh = { "shfmt" },
 				ocaml = { "ocp-indent", "ocamlformat" },
 				toml = { "taplo" },
 			},
