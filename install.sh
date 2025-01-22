@@ -98,4 +98,11 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
     https://github.com/erebe/greenclip/releases/download/v4.2/greenclip &&
   chmod u+x $HOMEBIN/rofi/greenclip
 
+#############
+# greenclip #
+#############
+rm -rf "$XDG_CONFIG_HOME/greenclip.toml" &&
+  ln -sf "$DOTFILES/greenclip/greenclip.toml" \
+    "$XDG_CONFIG_HOME/greenclip.toml"
+
 echo "All set, you are ready to go!"
