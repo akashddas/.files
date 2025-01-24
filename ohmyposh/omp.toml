@@ -14,7 +14,6 @@ background = "transparent"
 foreground = "yellow"
 template = "<b>{{ .Path }}</b>"
 
-
 [blocks.segments.properties]
 style = "full"
 

@@ -21,3 +21,11 @@ map("n", "<leader>xx", ":bdelete!<CR>", { desc = "Delete current buffer" })
 
 map("n", "<leader>vv", ":vsplit<CR>", { desc = "Split buffer vertically" })
 map("n", "<leader>hh", ":split<CR>", { desc = "Split buffer horizontally" })
+
+map("n", "<leader>ca", function()
+	vim.lsp.buf.code_action()
+end, { desc = "Accept code actions" })
+
+map("n", "<leader>wd", function()
+	print(vim.fn.expand("%:p"))
+end, { desc = "Show current working directory" })
