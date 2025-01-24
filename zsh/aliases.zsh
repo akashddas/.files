@@ -4,7 +4,7 @@ alias c="clear"
 
 alias bb="cd .."
 
-alias vi="nvim"
+alias vi="$EDITOR"
 
 alias ls="ls --color"
 alias ll="ls -lah --color"
@@ -20,7 +20,7 @@ alias gc="git commit"
 alias gp="git push"
 
 # For configuration editors
-alias va="$DOTFILES/alacritty/alacritty.toml"
+alias va="$EDITOR $DOTFILES/alacritty/alacritty.toml"
 alias vn="$EDITOR $XDG_CONFIG_HOME/nvim"
 alias vs="$EDITOR $DOTFILES/install.sh"
 alias vo="$EDITOR $XDG_CONFIG_HOME/ohmyposh/omp.toml"
