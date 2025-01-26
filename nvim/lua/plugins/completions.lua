@@ -4,6 +4,12 @@ return {
 	version = "*",
 	config = function()
 		require("blink.cmp").setup({
+			sources = {
+				default = { "dadbod", "lsp", "path", "buffer" },
+				providers = {
+					dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" },
+				},
+			},
 			keymap = {
 				preset = "default",
 				["<Tab>"] = {

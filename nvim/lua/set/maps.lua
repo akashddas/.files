@@ -24,6 +24,8 @@ map("n", "<leader>hh", ":split<CR>", { desc = "Split buffer horizontally" })
 
 map("n", "<leader>zo", ":ZenMode<CR>", { desc = "Toggle zen-mode" })
 
+map("n", "<leader>dbui", ":DBUI<CR>", { desc = "Toggle DBUI" })
+
 map("n", "<leader>ca", function()
 	vim.lsp.buf.code_action()
 end, { desc = "Accept code actions" })
