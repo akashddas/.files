@@ -27,6 +27,7 @@ return {
 		map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 		map("n", "<leader>fk", builtin.keymaps, { desc = "Telescope show keymaps" })
 		map("n", "<leader>fr", builtin.lsp_references, { desc = "Telescope find references" })
+		-- Start telescope in $DOTFILES
 		map("n", "<leader>dot", function()
 			builtin.find_files({
 				cwd = vim.fn.getenv("DOTFILES"),
