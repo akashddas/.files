@@ -33,6 +33,7 @@ require("lazy").setup({
 })
 
 local togglenumbers = vim.api.nvim_create_augroup("togglenumbers", { clear = true })
+local exitcommands = vim.api.nvim_create_augroup("exitcommands", { clear = true })
 
 -- Remove line numbers from neovim's terminal
 vim.api.nvim_create_autocmd({ "TermOpen" }, {
@@ -60,6 +61,17 @@ vim.api.nvim_create_autocmd({ "CmdlineLeave", "InsertLeave", "FocusGained", "Win
 		if vim.opt.number:get() then
 			vim.opt.relativenumber = true
 			vim.cmd("redraw")
+		end
+	end,
+})
+
+vim.g.zen_mode_flag = false
+
+vim.api.nvim_create_autocmd({ "ExitPre" }, {
+	group = exitcommands,
+	callback = function()
+		if vim.g.zen_mode_flag then
+			vim.cmd("ZenMode")
 		end
 	end,
 })
