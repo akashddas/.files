@@ -32,6 +32,9 @@ export SAVEHIST=10000
 # For dotfiles
 export DOTFILES="$TENT/.files"
 
+# For vaults
+export VAULTS="$HOME/vaults"
+
 # For paths
 typeset -U path
 path=("$HOME/.cargo/bin" "$HOME/.bin/rofi" "$HOME/.bin/nodejs/bin" "$HOME/.bin/luals/bin" "$HOME/.local/bin" $path)
