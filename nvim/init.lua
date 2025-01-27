@@ -65,8 +65,8 @@ vim.api.nvim_create_autocmd({ "CmdlineLeave", "InsertLeave", "FocusGained", "Win
 	end,
 })
 
+-- ZenMode fix pressing :wqa would hide tmux bar and not reset terminal font-size
 vim.g.zen_mode_flag = false
-
 vim.api.nvim_create_autocmd({ "ExitPre" }, {
 	group = exitcommands,
 	callback = function()

@@ -4,6 +4,8 @@ alias c="clear"
 
 alias bb="cd .."
 
+alias vv="$EDITOR $VAULTS/personal/notes/"
+
 alias vi="$EDITOR"
 
 alias ls="ls --color"

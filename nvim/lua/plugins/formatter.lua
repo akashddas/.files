@@ -13,7 +13,7 @@ return {
 				css = { "prettier" },
 				javascript = { "prettier" },
 				tailwind = { "rustywind" },
-				markdown = { "mdformat" },
+				-- markdown = { "mdformat" },
 				zsh = { "shfmt" },
 				sh = { "shfmt" },
 				ocaml = { "ocp-indent", "ocamlformat" },
