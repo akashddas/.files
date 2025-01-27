@@ -20,6 +20,7 @@ return {
 			ts_ls = true,
 			ocamllsp = true,
 			pylsp = true,
+			sqlls = true,
 		}
 
 		for server, config in pairs(servers) do

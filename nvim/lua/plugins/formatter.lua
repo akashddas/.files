@@ -13,14 +13,21 @@ return {
 				css = { "prettier" },
 				javascript = { "prettier" },
 				tailwind = { "rustywind" },
-				-- markdown = { "mdformat" },
+				markdown = {
+					"mdsf", -- run mdsf init to generate config and add `sleek` to sql object
+					"mdformat",
+				},
 				zsh = { "shfmt" },
 				sh = { "shfmt" },
 				ocaml = { "ocp-indent", "ocamlformat" },
 				toml = { "taplo" },
+				sql = {
+					"sleek",
+					"sql-formatter",
+				},
 			},
 			format_on_save = {
-				timeout_ms = 1500,
+				timeout_ms = 3000,
 				lsp_format = "fallback",
 			},
 		})

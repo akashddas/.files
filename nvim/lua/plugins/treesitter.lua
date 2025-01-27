@@ -20,6 +20,7 @@ return {
 				"toml",
 				"ocaml",
 				"python",
+				"sql",
 			},
 			sync_install = false,
 			auto_install = false,

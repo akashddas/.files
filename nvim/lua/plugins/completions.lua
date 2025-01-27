@@ -5,9 +5,14 @@ return {
 	config = function()
 		require("blink.cmp").setup({
 			sources = {
-				default = { "dadbod", "lsp", "path", "buffer" },
+				default = { "dadbod", "lsp", "path", "buffer", "markdown" },
 				providers = {
 					dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" },
+					markdown = {
+						name = "RenderMarkdown",
+						module = "render-markdown.integ.blink",
+						fallbacks = { "lsp" },
+					},
 				},
 			},
 			keymap = {
