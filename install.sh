@@ -70,6 +70,22 @@ mkdir "$XDG_CONFIG_HOME/rofi"
 ln -sf "$DOTFILES/rofi/config.rasi" "$XDG_CONFIG_HOME/rofi/config.rasi"
 ln -sf "$DOTFILES/rofi/venus.rasi" "$XDG_CONFIG_HOME/rofi/venus.rasi"
 
+################
+# rofi-scripts #
+################
+[ ! -d "$HOMEBIN/rofi" ] &&
+  mkdir "$HOMEBIN/rofi" &&
+  ln -sf "$DOTFILES/rofi/scripts/rofi-wifi-menu.sh" \
+    "$HOMEBIN/rofi/rofi-wifi-menu"
+ln -sf "$DOTFILES/rofi/scripts/rofi-power-menu.sh" \
+  "$HOMEBIN/rofi/rofi-power-menu"
+[ ! -f "$HOMEBIN/rofi/greenclip" ] &&
+  echo "Could not find greenclip..." &&
+  echo "Installing greenclip..." &&
+  wget -P "$HOMEBIN/rofi" \
+    https://github.com/erebe/greenclip/releases/download/v4.2/greenclip &&
+  chmod u+x $HOMEBIN/rofi/greenclip
+
 ########
 # tmux #
 ########
@@ -81,22 +97,6 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
   echo "Installing tmux-plugin-manager..." &&
   git clone https://github.com/tmux-plugins/tpm \
     "$HOME/.tmux/plugins/tpm"
-
-################
-# rofi-scripts #
-################
-[ ! -d "$HOMEBIN/rofi" ] &&
-  mkdir "$HOMEBIN/rofi" &&
-  ln "$DOTFILES/rofi/scripts/rofi-wifi-menu.sh" \
-    "$HOMEBIN/rofi/rofi-wifi-menu" &&
-  ln "$DOTFILES/rofi/scripts/rofi-power-menu.sh" \
-    "$HOMEBIN/rofi/rofi-power-menu"
-[ ! -f "$HOMEBIN/rofi/greenclip" ] &&
-  echo "Could not find greenclip..." &&
-  echo "Installing greenclip..." &&
-  wget -P "$HOMEBIN/rofi" \
-    https://github.com/erebe/greenclip/releases/download/v4.2/greenclip &&
-  chmod u+x $HOMEBIN/rofi/greenclip
 
 #############
 # greenclip #
