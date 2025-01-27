@@ -7,7 +7,7 @@ notify-send "Getting list of available Wi-Fi networks..."
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-FIELDS=SSID,SECURITY
+FIELDS=SSID,SECURITY,BARS
 POSITION=0
 YOFF=0
 XOFF=0
@@ -77,7 +77,10 @@ else
     nmcli con up "$CHSSID"
   else
     if [[ "$CHENTRY" =~ "WPA2" ]] || [[ "$CHENTRY" =~ "WEP" ]]; then
-      WIFIPASS=$(echo "if connection is stored, hit enter" | rofi -dmenu -p "Password" -lines 1 -font "$FONT")
+      WIFIPASS=$(
+        # echo "if connection is stored, hit enter" |
+        rofi -dmenu -p "Password" -lines 1 -font "$FONT"
+      )
     fi
     nmcli dev wifi con "$CHSSID" password "$WIFIPASS"
   fi
