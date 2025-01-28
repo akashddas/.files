@@ -21,6 +21,10 @@ return {
 			ocamllsp = true,
 			pylsp = true,
 			sqlls = true,
+			html = true,
+			cssls = true,
+			jsonls = true,
+			emmet_ls = true,
 		}
 
 		for server, config in pairs(servers) do

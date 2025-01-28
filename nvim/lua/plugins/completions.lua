@@ -1,11 +1,11 @@
 return {
 	"saghen/blink.cmp",
-	dependencies = "rafamadriz/friendly-snippets",
+	dependencies = { "rafamadriz/friendly-snippets" },
 	version = "*",
 	config = function()
 		require("blink.cmp").setup({
 			sources = {
-				default = { "dadbod", "lsp", "path", "buffer", "markdown" },
+				default = { "dadbod", "lsp", "path", "buffer", "markdown", "snippets" },
 				providers = {
 					dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" },
 					markdown = {

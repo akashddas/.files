@@ -15,7 +15,9 @@ return {
 				tailwind = { "rustywind" },
 				markdown = {
 					"mdsf", -- run mdsf init to generate config and add `sleek` to sql object
-					"mdformat",
+					-- "prettier",
+					-- "deno_fmt",
+					-- "mdformat", -- problems with [[foo|bar]]
 				},
 				zsh = { "shfmt" },
 				sh = { "shfmt" },
