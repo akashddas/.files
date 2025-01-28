@@ -33,5 +33,10 @@ return {
 				cwd = vim.fn.getenv("DOTFILES"),
 			})
 		end, { desc = "Telescope open dotfiles directory" })
+		map("n", "<leader>vv", function()
+			builtin.find_files({
+				cwd = vim.fn.getenv("VAULTS"),
+			})
+		end, { desc = "Telescope open vaults directory" })
 	end,
 }

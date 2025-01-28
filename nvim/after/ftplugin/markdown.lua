@@ -6,3 +6,4 @@ set.conceallevel = 1
 vim.g.mapleader = " "
 local map = vim.keymap.set
 map("n", "<leader>ot", ":ObsidianTemplate<CR>", { desc = "Insert Obsidian Template" })
+map("n", "<leader>md", ":MarkdownPreview<CR>", { desc = "Open markdown preview window" })

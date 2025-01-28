@@ -15,16 +15,16 @@ map("n", "<leader>tt", ":terminal<CR>", { desc = "Launch terminal" })
 map("t", "<Esc><Esc>", "<C-\\><C-N>", { desc = "Enter normal mode" })
 
 map("n", "<leader>cc", ":enew<CR>", { desc = "Create new buffer" })
-map("n", "<leader>bn", ":bnext<CR>", { desc = "Go to next buffer" })
-map("n", "<leader>bp", ":bprev<CR>", { desc = "Go to previous buffer" })
+map("n", "<leader>tn", ":bnext<CR>", { desc = "Go to next buffer" })
+map("n", "<leader>tp", ":bprev<CR>", { desc = "Go to previous buffer" })
 map("n", "<leader>xx", ":bdelete!<CR>", { desc = "Delete current buffer" })
 
-map("n", "<leader>vv", ":vsplit<CR>", { desc = "Split buffer vertically" })
-map("n", "<leader>hh", ":split<CR>", { desc = "Split buffer horizontally" })
+map("n", "<leader>sv", ":vsplit<CR>", { desc = "Split buffer vertically" })
+map("n", "<leader>sh", ":split<CR>", { desc = "Split buffer horizontally" })
 
 map("n", "<leader>zo", ":ZenMode<CR>", { desc = "Toggle zen-mode" })
 
-map("n", "<leader>dbui", ":DBUI<CR>", { desc = "Toggle DBUI" })
+map("n", "<leader>db", ":DBUI<CR>", { desc = "Toggle DBUI" })
 
 map("n", "<leader>ca", function()
 	vim.lsp.buf.code_action()

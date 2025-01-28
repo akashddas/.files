@@ -111,7 +111,5 @@ else
   # Check if the connection was successful and notify the user
   if [[ $? -eq 0 ]]; then
     notify-send "Successfully connected to $CHSSID"
-  else
-    notify-send "$CHSSID Failed to connect"
   fi
 fi
