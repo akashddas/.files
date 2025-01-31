@@ -44,3 +44,7 @@ alias ssrx="sudo systemctl restart xremap.service"
 # For powerline icons in tmux
 alias tmux="tmux -u"
 alias grep="grep -i --color"
+
+# For tmux
+alias ta="tmux attach-session -t"
+alias tl="tmux list-sessions"
