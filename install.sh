@@ -89,6 +89,7 @@ ln -sf "$DOTFILES/rofi/scripts/rofi-power-menu.sh" \
 ########
 # tmux #
 ########
+mkdir -p "$HOME/.tmux/resurrect"
 mkdir -p "$XDG_CONFIG_HOME/tmux"
 ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 # Install tpm

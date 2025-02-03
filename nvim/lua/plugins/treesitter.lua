@@ -21,6 +21,7 @@ return {
 				"ocaml",
 				"python",
 				"sql",
+				"http",
 			},
 			sync_install = false,
 			auto_install = false,

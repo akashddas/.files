@@ -48,3 +48,4 @@ alias grep="grep -i --color"
 # For tmux
 alias ta="tmux attach-session -t"
 alias tl="tmux list-sessions"
+alias ctr="rm -rf $HOME/.config/local/share/tmux/resurrect/* && rm -rf $HOME/.tmux/resurrect/*"
